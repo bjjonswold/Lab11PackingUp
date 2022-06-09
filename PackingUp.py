@@ -33,7 +33,7 @@ def sortList(boxes):
     
 def whereBoxes():
   for i in range(4):
-    print(location[i] + ":")
+    print(locations[i] + ":")
     for box in listOfLocations[i]:
       items = box[3:]
       print(f"{box[2]} -- {items}")
