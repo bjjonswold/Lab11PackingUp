@@ -33,6 +33,12 @@ Also add your own tests!
 # Submitting the Assignment
 Make sure to submit the assignment for grading! If you haven't clicked through the canvas link in a while, we would suggest clicking through it again before submitting.
 
-# Reminder on 
+# Reminder on Lists of Lists
+Like in this lab, lists of lists are a lot like boxes in boxes. If it helps to visualize them as actual lists, picture your notes or powerpoints where you may have a big header (the outer list) and beneath it have several sub-headers (the inner lists) with information under them (the data in the inner lists). Because of this, in order to index into these lists, we have to go through each layer of list, like opening one box and then another. 
 
-# Reminder on 
+For example, with the list lst = \[\[1, 2, 3], \[4 , 5, 6]], in order to index to 5, we would index it like this: lst\[1]\[1] or (lst\[1])\[1]
+
+To read it left to right, we are getting the list in lst at index 1 (\[4, 5, 6]) and then getting the item in that list at index 1 (5).
+
+# Reminder on Finding the Max
+When writing your function for finding the max, picture yourself being told a series of numbers with a  blindfold on. You don't know how many numbers are left, nor do you know if the number you currently think is the max is the true max **until you reach the end**. Finding the max with a computer is the same way. We will only know the current max out of what we have seen so far at any given moment. As such, you will likely need a variable that updates with whatever the new current max is.
