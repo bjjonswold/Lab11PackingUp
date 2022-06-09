@@ -34,6 +34,8 @@ def putAway(box, location="living room"):
 #outptut: boxes are sorted
 def sortList(boxes):
     for box in boxes:
+        if (box[0] == "unknown"):
+            putAway(box)
         putAway(box, box[0])
 
 #input: nothing
