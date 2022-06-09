@@ -2,27 +2,31 @@
 complex data: lists within lists, etc (warmup)
 
 # Attached is some code
-Review the code provided. Answer the following questions by adding comments to your code! You are free to talk with other students, and seek better understanding to these questions. See below for reminders on types, variables, and input
+Review the code provided. Answer the following questions by adding comments to your code! You are free to talk with other students, and seek better understanding to these questions. See below for reminders on types, variables, and input.
+
+Note: The format for each list is as follows: \[location, number of items, name of box, item, item, item...]
 
 # Step One
-1. q
-2. q
-3. q
-4. q
-5. q
+1. After reading the code, what do you think the purpose of the variables at the top is? Where are they used?
+2. Code trace for main. What is the highest number of functions that it goes through before getting back to main?
+3. How does sortList(boxes) use other functions to simplify the work?
+4. What is happening in the putAway() declaration? What is location = "living room"?
+5. What are some uses of defaults and how would we call something like someFunction(arg1, arg2 = "default") if we want to use the default?
 
+# Step Two: Coding: maxItems(boxes)
+Find the function maxItems(boxes). Code maxItems(boxes) such that it returns the maximum number of items any of the boxes has.
 
-# Step Two: Coding: \[]
-Find the function \[].
+**NOTE: There is an entry that has the number of items in the box**
 
-# Step 3: Test \[]
+For example, if we used the list from reading "packing.csv", we should get 7.
+
+# Step 3: Test maxItems(boxes)
 How do you test code? You simply add the lines to your python file (in the future, you will have test lines in separate files).
 
 As such, we would recommend adding the following just above def main().
 
-print("TESTING", \[]) 
-
-print("TESTING", \[]) 
+boxes = readFile("packing.csv")
+print("TESTING", maxItems(boxes)) 
 
 Also add your own tests!
 
