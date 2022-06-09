@@ -36,7 +36,8 @@ def sortList(boxes):
     for box in boxes:
         if (box[0] == "unknown"):
             putAway(box)
-        putAway(box, box[0])
+        else:
+            putAway(box, box[0])
 
 #input: nothing
 #output: prints each room and what boxes are there and what they have inside
