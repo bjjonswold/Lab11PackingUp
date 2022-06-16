@@ -21,7 +21,7 @@ Find the function `maxItems(boxes)`. Code maxItems(boxes) such that it returns t
 ```
 For example, if we used the list from reading "packing.csv", we should get 7.
 ```
-# Step 3: Test maxItems(boxes)
+# Step Three: Test maxItems(boxes)
 How do you test code? You simply add the lines to your python file (in the future, you will have test lines in separate files).
 
 As such, we would recommend adding the following just above def main().
