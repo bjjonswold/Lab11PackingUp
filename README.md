@@ -1,7 +1,7 @@
 # Lab11PackingUp
 complex data: lists within lists, etc (warmup)
 
-# Attached is some code
+# In PackingUp.py is some code
 Review the code provided. Answer the following questions by adding comments to your code! You are free to talk with other students, and seek better understanding to these questions. See below for reminders on types, variables, and input.
 
 Note: The format for each list is as follows: \[location, number of items, name of box, item, item, item...]
@@ -15,7 +15,7 @@ Answer the following questions about the code provided as comments in the code:
 5. What are some uses of defaults and how would we call something like someFunction(arg1, arg2 = "default") if we want to use the default?
 
 # Step Two: Coding: maxItems(boxes)
-Find the function maxItems(boxes). Code maxItems(boxes) such that it returns the maximum number of items any of the boxes has.
+Find the function `maxItems(boxes)`. Code maxItems(boxes) such that it returns the maximum number of items any of the boxes has.
 
 **NOTE: There is an entry that has the number of items in the box**
 ```
@@ -25,7 +25,7 @@ For example, if we used the list from reading "packing.csv", we should get 7.
 How do you test code? You simply add the lines to your python file (in the future, you will have test lines in separate files).
 
 As such, we would recommend adding the following just above def main().
-```
+```python
 boxes = readFile("packing.csv")
 print("TESTING", maxItems(boxes)) 
 ```
@@ -38,8 +38,8 @@ Make sure to submit the assignment for grading! If you haven't clicked through t
 Like in this lab, lists of lists are a lot like boxes in boxes. If it helps to visualize them as actual lists, picture your notes or powerpoints where you may have a big header (the outer list) and beneath it have several sub-headers (the inner lists) with information under them (the data in the inner lists). Because of this, in order to index into these lists, we have to go through each layer of list, like opening one box and then another. 
 
 For example, with the list 
-```
-lst = \[\[1, 2, 3], \[4 , 5, 6]]
+```python
+lst = [[1, 2, 3], [4 , 5, 6]]
 ```
 In order to index to 5, we would index it like this: 
 ```
