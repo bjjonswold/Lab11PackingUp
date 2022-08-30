@@ -7,7 +7,7 @@ Review the code provided. Answer the following questions by adding comments to y
 Note: The format for each list is as follows: \[location, number of items, name of box, item, item, item...]
 
 # Step One
-Answer the following questions about the code provided as comments in the code:
+Complete the following questions in the comments at the top of your code. If your answer is multiple lines, use these: \``` around your answer:
 1. After reading the code, what do you think the purpose of the variables at the top is? Where are they used?
 2. Code trace for main. What is the highest number of functions that it goes through before getting back to main?
 3. How does sortList(boxes) use other functions to simplify the work?
