@@ -15,7 +15,6 @@ You can call this funciton with the default by writing:
 someFunction(arg1) 
 '''
 
-
 import csv
 
 # What are these for?
@@ -34,7 +33,10 @@ def readFile(fileName):
         reader = csv.reader(file)
         for line in reader:
             boxes.append(line)
+    #print(f'Testing boxes: {boxes}')
     return boxes
+
+
 
 #input: box-- a single list from the list of lists, location-- where the item should be stored
 #output: locations now have appropriate boxes
@@ -71,13 +73,18 @@ def whereBoxes():
 #output: maximum amount of items in any box
 def maxItems(boxes):
     #student code
-    return 
+    max_value = max([int(row[1]) for row in boxes])
+    print(f'Testing max value: {max_value}')
+    return max_value
 
+boxes = readFile("packing.csv")
+print("TESTING", maxItems(boxes))
 
 def main():
     boxes = readFile("packing.csv")
     sortList(boxes)
     whereBoxes()
+    maxItems(boxes)
 
 
 if __name__ == "__main__":
